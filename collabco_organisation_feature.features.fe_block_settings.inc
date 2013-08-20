@@ -14,19 +14,19 @@ function collabco_organisation_feature_default_fe_block_settings() {
 
   $export['views-organizations-block'] = array(
     'cache' => -1,
-    'css_class' => 'iin-feature',
+    'css_class' => '',
     'custom' => 0,
     'delta' => 'organizations-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '<temporarily disabled>innovation-capabilities/*',
+    'pages' => '',
     'roles' => array(),
     'themes' => array(
       'openhub' => array(
-        'region' => 'sidebar_second',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'openhub',
-        'weight' => -21,
+        'weight' => 0,
       ),
       'seven' => array(
         'region' => '',
@@ -36,7 +36,7 @@ function collabco_organisation_feature_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 1,
+    'visibility' => 0,
   );
 
   return $export;
