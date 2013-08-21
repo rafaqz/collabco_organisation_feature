@@ -18,9 +18,12 @@ dependencies[] = taxonomy
 dependencies[] = uuid
 dependencies[] = uuid_features
 dependencies[] = views
-datestamp = 1376976841
+datestamp = 1377048584
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
+features[fe_block_settings][] = views-0ef6861993bdfc5484027fdafe558cf8
+features[fe_block_settings][] = views-112bcb4710acf1a126d5d1fb675f146c
+features[fe_block_settings][] = views-member_organisations-block_1
 features[fe_block_settings][] = views-organizations-block
 features[features_api][] = api:2
 features[field_base][] = field_address
@@ -61,15 +64,8 @@ features[variable][] = menu_parent_organisation
 features[variable][] = node_options_organisation
 features[variable][] = node_preview_organisation
 features[variable][] = node_submitted_organisation
+features[views_view][] = member_organisations
 features[views_view][] = organizations
 features_exclude[field_base][body] = body
 no autodetect = 1
 project path = sites/all/modules/features
-
-
-; Information added by drush on 2013-08-20
-version = "7.x-1.0-alpha1"
-core = "7.x"
-project = "collabco_organisation_feature"
-datestamp = "1377048584"
-
