@@ -80,3 +80,10 @@ version = "unknown"
 project = "collabco_organisation_feature"
 datestamp = "1377754313"
 
+
+
+; Information added by drush on 2013-08-29
+version = "unknown"
+project = "collabco_organisation_feature"
+datestamp = "1377761486"
+
