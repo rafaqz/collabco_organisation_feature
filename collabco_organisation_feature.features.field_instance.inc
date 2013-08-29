@@ -374,9 +374,9 @@ function collabco_organisation_feature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'profile2-iin_kickstarter-field_organisation_ref'
-  $field_instances['profile2-iin_kickstarter-field_organisation_ref'] = array(
-    'bundle' => 'iin_kickstarter',
+  // Exported field_instance: 'profile2-profile-field_organisation_ref'
+  $field_instances['profile2-profile-field_organisation_ref'] = array(
+    'bundle' => 'profile',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
