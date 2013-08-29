@@ -73,3 +73,10 @@ features[views_view][] = member_organisations
 features[views_view][] = organizations
 features_exclude[field_base][body] = body
 no autodetect = 1
+
+
+; Information added by drush on 2013-08-28
+version = "unknown"
+project = "collabco_organisation_feature"
+datestamp = "1377754313"
+
