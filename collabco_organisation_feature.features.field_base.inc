@@ -121,9 +121,9 @@ function collabco_organisation_feature_field_default_field_bases() {
     'locked' => 0,
     'module' => 'image',
     'settings' => array(
-      'default_image' => 349,
+      'default_image' => 0,
       'profile2_private' => FALSE,
-      'uri_scheme' => 'private',
+      'uri_scheme' => 'public',
     ),
     'translatable' => 0,
     'type' => 'image',

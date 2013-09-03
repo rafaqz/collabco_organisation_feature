@@ -10,6 +10,15 @@
 function collabco_organisation_feature_user_default_permissions() {
   $permissions = array();
 
+  // Exported permission: clear organisation_import feeds.
+  $permissions['clear organisation_import feeds'] = array(
+    'name' => 'clear organisation_import feeds',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'feeds',
+  );
+
   // Exported permission: create organisation content.
   $permissions['create organisation content'] = array(
     'name' => 'create organisation content',
@@ -17,7 +26,7 @@ function collabco_organisation_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
   );
@@ -29,7 +38,6 @@ function collabco_organisation_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'node',
   );
@@ -41,9 +49,36 @@ function collabco_organisation_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
+      'authenticated user' => 'authenticated user',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: delete terms in 2.
+  $permissions['delete terms in 2'] = array(
+    'name' => 'delete terms in 2',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 3.
+  $permissions['delete terms in 3'] = array(
+    'name' => 'delete terms in 3',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: delete terms in 4.
+  $permissions['delete terms in 4'] = array(
+    'name' => 'delete terms in 4',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'taxonomy',
   );
 
   // Exported permission: edit any organisation content.
@@ -53,7 +88,6 @@ function collabco_organisation_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'node',
   );
@@ -65,9 +99,53 @@ function collabco_organisation_feature_user_default_permissions() {
       'Admin' => 'Admin',
       'Community Moderator' => 'Community Moderator',
       'Content Manager' => 'Content Manager',
-      'Super Admin' => 'Super Admin',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: edit terms in 2.
+  $permissions['edit terms in 2'] = array(
+    'name' => 'edit terms in 2',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 3.
+  $permissions['edit terms in 3'] = array(
+    'name' => 'edit terms in 3',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: edit terms in 4.
+  $permissions['edit terms in 4'] = array(
+    'name' => 'edit terms in 4',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'taxonomy',
+  );
+
+  // Exported permission: import organisation_import feeds.
+  $permissions['import organisation_import feeds'] = array(
+    'name' => 'import organisation_import feeds',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'feeds',
+  );
+
+  // Exported permission: unlock organisation_import feeds.
+  $permissions['unlock organisation_import feeds'] = array(
+    'name' => 'unlock organisation_import feeds',
+    'roles' => array(
+      'Admin' => 'Admin',
+    ),
+    'module' => 'feeds',
   );
 
   return $permissions;

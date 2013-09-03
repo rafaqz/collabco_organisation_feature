@@ -66,33 +66,6 @@ function collabco_organisation_feature_default_fe_block_settings() {
     'visibility' => 1,
   );
 
-  $export['views-member_organisations-block_1'] = array(
-    'cache' => -1,
-    'css_class' => '',
-    'custom' => 0,
-    'delta' => 'member_organisations-block_1',
-    'module' => 'views',
-    'node_types' => array(),
-    'pages' => 'members',
-    'roles' => array(),
-    'themes' => array(
-      'custom_theme' => array(
-        'region' => 'content_lower',
-        'status' => 1,
-        'theme' => 'custom_theme',
-        'weight' => 0,
-      ),
-      'seven' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'seven',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 1,
-  );
-
   $export['views-organizations-block'] = array(
     'cache' => -1,
     'css_class' => '',

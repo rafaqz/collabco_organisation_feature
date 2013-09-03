@@ -82,7 +82,7 @@ function collabco_organisation_feature_feeds_importer_default() {
             'source' => 'Member Type',
             'target' => 'field_member_type',
             'term_search' => '0',
-            'autocreate' => 0,
+            'autocreate' => 1,
           ),
           8 => array(
             'source' => 'Industry',

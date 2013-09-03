@@ -185,7 +185,7 @@ function collabco_organisation_feature_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
@@ -207,7 +207,7 @@ function collabco_organisation_feature_field_default_field_instances() {
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
-      'default_image' => 348,
+      'default_image' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg bmp',
       'max_filesize' => '',
@@ -338,8 +338,8 @@ function collabco_organisation_feature_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'og_group_ref',
-    'label' => 'Groups audience',
-    'required' => FALSE,
+    'label' => 'Groups',
+    'required' => 0,
     'settings' => array(
       'behaviors' => array(
         'og_widget' => array(
@@ -367,6 +367,7 @@ function collabco_organisation_feature_field_default_field_instances() {
       ),
     ),
     'widget' => array(
+      'active' => 0,
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
@@ -411,7 +412,7 @@ function collabco_organisation_feature_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Address');
   t('Comment');
-  t('Groups audience');
+  t('Groups');
   t('Industry');
   t('Member Type');
   t('Organisation');

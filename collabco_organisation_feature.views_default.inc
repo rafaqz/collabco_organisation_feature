@@ -24,12 +24,16 @@ function collabco_organisation_feature_views_default_views() {
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Member Organisations';
   $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['link_display'] = 'custom_url';
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '16';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '3';
   $handler->display->display_options['style_plugin'] = 'list';
   $handler->display->display_options['style_options']['default_row_class'] = FALSE;
   $handler->display->display_options['style_options']['row_class_special'] = FALSE;
@@ -40,18 +44,13 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
+  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
   $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
     'membership_type' => 'membership_type',
     'areas_of_participant_expertise' => 0,
-    'how_i_d_like_to_participate' => 0,
     'industries' => 0,
     'organization_type' => 0,
-    'precinct' => 0,
   );
-  /* Relationship: OG membership: OG membership from Node */
-  $handler->display->display_options['relationships']['og_membership_rel']['id'] = 'og_membership_rel';
-  $handler->display->display_options['relationships']['og_membership_rel']['table'] = 'node';
-  $handler->display->display_options['relationships']['og_membership_rel']['field'] = 'og_membership_rel';
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -87,10 +86,9 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="row-fluid twocolgrid">
-<div class="span5"> [field_organisation_image]</div> 
-<div class="span1"></div>
-<div class="span5">[field_website]</div>
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="row-fluid twocolgrid orgbox">
+<div class="orgimg"> [field_organisation_image]</div> 
+<div class="span11 orgtext">[field_website]</div>
 </div>
 ';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
@@ -112,13 +110,7 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'organisation' => 'organisation',
   );
-  /* Filter criterion: Taxonomy term: Name */
-  $handler->display->display_options['filters']['name_1']['id'] = 'name_1';
-  $handler->display->display_options['filters']['name_1']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['name_1']['field'] = 'name';
-  $handler->display->display_options['filters']['name_1']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['filters']['name_1']['operator'] = 'contains';
-  $handler->display->display_options['filters']['name_1']['value'] = 'Member';
+  $handler->display->display_options['filters']['type']['group'] = 1;
 
   /* Display: Collabortation Partners */
   $handler = $view->new_display('block', 'Collabortation Partners', 'partners_block');
@@ -173,9 +165,6 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['filters']['name_1']['field'] = 'name';
   $handler->display->display_options['filters']['name_1']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['name_1']['value'] = 'Provider';
-
-  /* Display: Members Block */
-  $handler = $view->new_display('block', 'Members Block', 'block_1');
 
   /* Display: Closed Group Organisations */
   $handler = $view->new_display('block', 'Closed Group Organisations', 'block_2');
@@ -236,6 +225,9 @@ function collabco_organisation_feature_views_default_views() {
   );
   $handler->display->display_options['arguments']['gid']['validate_options']['access'] = TRUE;
   $handler->display->display_options['path'] = 'node/%/organisations';
+
+  /* Display: Members */
+  $handler = $view->new_display('block', 'Members', 'mem_block');
   $export['member_organisations'] = $view;
 
   $view = new view();
