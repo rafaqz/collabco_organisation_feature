@@ -12,8 +12,8 @@ function collabco_organisation_feature_views_default_views() {
 
   $view = new view();
   $view->name = 'member_organisations';
-  $view->description = '';
-  $view->tag = 'default';
+  $view->description = 'Lists organisations of a certain type';
+  $view->tag = 'Organisation Feature';
   $view->base_table = 'node';
   $view->human_name = 'Member Organisations';
   $view->core = 7;
