@@ -97,6 +97,7 @@ features[variable][] = menu_parent_organisation
 features[variable][] = node_options_organisation
 features[variable][] = node_preview_organisation
 features[variable][] = node_submitted_organisation
+features[variable][] = pathauto_node_organisation_pattern
 features[variable][] = pathauto_taxonomy_term_industries_pattern
 features[variable][] = pathauto_taxonomy_term_organization_type_pattern
 features[views_view][] = member_organisations
