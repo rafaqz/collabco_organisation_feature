@@ -23,8 +23,8 @@ function collabco_organisation_feature_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'custom_theme' => array(
-        'region' => 'content_bottom',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'custom_theme',
         'weight' => 0,
       ),
@@ -50,8 +50,8 @@ function collabco_organisation_feature_default_fe_block_settings() {
     'roles' => array(),
     'themes' => array(
       'custom_theme' => array(
-        'region' => 'content_bottom',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'custom_theme',
         'weight' => 0,
       ),

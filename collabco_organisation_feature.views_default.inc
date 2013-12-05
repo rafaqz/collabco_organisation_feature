@@ -44,12 +44,13 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
-  $handler->display->display_options['relationships']['term_node_tid']['required'] = TRUE;
   $handler->display->display_options['relationships']['term_node_tid']['vocabularies'] = array(
     'membership_type' => 'membership_type',
     'areas_of_participant_expertise' => 0,
+    'component' => 0,
     'industries' => 0,
     'organization_type' => 0,
+    'subscription_types' => 0,
   );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
