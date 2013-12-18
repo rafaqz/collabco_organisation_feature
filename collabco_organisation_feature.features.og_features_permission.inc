@@ -28,7 +28,6 @@ function collabco_organisation_feature_og_features_default_permissions() {
   $permissions['node:closed_group:delete own organisation content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
-      'member' => 'member',
     ),
   );
 
@@ -39,11 +38,38 @@ function collabco_organisation_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:closed_group:update field_organisation_image field'
+  $permissions['node:closed_group:update field_organisation_image field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:closed_group:update field_organisation_type field'
+  $permissions['node:closed_group:update field_organisation_type field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
   // Exported og permission: 'node:closed_group:update own organisation content'
   $permissions['node:closed_group:update own organisation content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
-      'member' => 'member',
+    ),
+  );
+
+  // Exported og permission: 'node:closed_group:view field_organisation_image field'
+  $permissions['node:closed_group:view field_organisation_image field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:closed_group:view field_organisation_type field'
+  $permissions['node:closed_group:view field_organisation_type field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
     ),
   );
 
@@ -75,10 +101,41 @@ function collabco_organisation_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:group:update field_organisation_image field'
+  $permissions['node:group:update field_organisation_image field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:group:update field_organisation_type field'
+  $permissions['node:group:update field_organisation_type field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+    ),
+  );
+
   // Exported og permission: 'node:group:update own organisation content'
   $permissions['node:group:update own organisation content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
+    ),
+  );
+
+  // Exported og permission: 'node:group:view field_organisation_image field'
+  $permissions['node:group:view field_organisation_image field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+      'member' => 'member',
+    ),
+  );
+
+  // Exported og permission: 'node:group:view field_organisation_type field'
+  $permissions['node:group:view field_organisation_type field'] = array(
+    'roles' => array(
+      'administrator member' => 'administrator member',
+      'member' => 'member',
+      'non-member' => 'non-member',
     ),
   );
 

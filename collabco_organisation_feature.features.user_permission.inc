@@ -61,15 +61,6 @@ function collabco_organisation_feature_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: delete terms in 3.
-  $permissions['delete terms in 3'] = array(
-    'name' => 'delete terms in 3',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: delete terms in 4.
   $permissions['delete terms in 4'] = array(
     'name' => 'delete terms in 4',
@@ -104,15 +95,6 @@ function collabco_organisation_feature_user_default_permissions() {
   // Exported permission: edit terms in 2.
   $permissions['edit terms in 2'] = array(
     'name' => 'edit terms in 2',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
-  );
-
-  // Exported permission: edit terms in 3.
-  $permissions['edit terms in 3'] = array(
-    'name' => 'edit terms in 3',
     'roles' => array(
       'Admin' => 'Admin',
     ),
