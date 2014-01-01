@@ -100,7 +100,7 @@ function collabco_organisation_feature_field_default_field_instances() {
         ),
       ),
       'type' => 'addressfield_standard',
-      'weight' => 14,
+      'weight' => 4,
     ),
   );
 
@@ -137,44 +137,7 @@ function collabco_organisation_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 16,
-    ),
-  );
-
-  // Exported field_instance: 'node-organisation-field_member_type'
-  $field_instances['node-organisation-field_member_type'] = array(
-    'bundle' => 'organisation',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 11,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_member_type',
-    'label' => 'Member Type',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 13,
+      'weight' => 7,
     ),
   );
 
@@ -224,7 +187,51 @@ function collabco_organisation_feature_field_default_field_instances() {
         'progress_indicator' => 'throbber',
       ),
       'type' => 'image_image',
-      'weight' => 8,
+      'weight' => 2,
+    ),
+  );
+
+  // Exported field_instance: 'node-organisation-field_organisation_membership'
+  $field_instances['node-organisation-field_organisation_membership'] = array(
+    'bundle' => 'organisation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_organisation_membership',
+    'label' => 'Organisation Membership',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'view' => array(
+      'args' => array(),
+      'display_name' => '',
+      'match_operator' => 'CONTAINS',
+      'size' => '',
+      'view_name' => '',
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 6,
     ),
   );
 
@@ -261,7 +268,7 @@ function collabco_organisation_feature_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 15,
+      'weight' => 5,
     ),
   );
 
@@ -311,7 +318,7 @@ function collabco_organisation_feature_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 12,
+      'weight' => 3,
     ),
   );
 
@@ -382,7 +389,7 @@ function collabco_organisation_feature_field_default_field_instances() {
       'module' => 'og',
       'settings' => array(),
       'type' => 'og_complex',
-      'weight' => 17,
+      'weight' => 8,
     ),
   );
 
@@ -392,8 +399,8 @@ function collabco_organisation_feature_field_default_field_instances() {
   t('Comment');
   t('Groups');
   t('Industry');
-  t('Member Type');
   t('Organisation Image');
+  t('Organisation Membership');
   t('Organisation Type');
   t('Website');
 

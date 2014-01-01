@@ -32,10 +32,10 @@ function collabco_organisation_feature_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'membership_type' => array(
-      'name' => 'Membership Type',
-      'machine_name' => 'membership_type',
-      'description' => 'Member and Partner Types',
+    'organisation_membership_type' => array(
+      'name' => 'Organisation Membership Type',
+      'machine_name' => 'organisation_membership_type',
+      'description' => 'Organisation Member and Partner Types',
       'hierarchy' => 0,
       'module' => 'taxonomy',
       'weight' => 0,
