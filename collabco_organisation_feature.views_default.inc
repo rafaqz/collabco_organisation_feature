@@ -62,13 +62,13 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Website */
-  $handler->display->display_options['fields']['field_website']['id'] = 'field_website';
-  $handler->display->display_options['fields']['field_website']['table'] = 'field_data_field_website';
-  $handler->display->display_options['fields']['field_website']['field'] = 'field_website';
-  $handler->display->display_options['fields']['field_website']['label'] = '';
-  $handler->display->display_options['fields']['field_website']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_website']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_website']['click_sort_column'] = 'url';
+  $handler->display->display_options['fields']['field_organisation_website']['id'] = 'field_organisation_website';
+  $handler->display->display_options['fields']['field_organisation_website']['table'] = 'field_data_field_organisation_website';
+  $handler->display->display_options['fields']['field_organisation_website']['field'] = 'field_organisation_website';
+  $handler->display->display_options['fields']['field_organisation_website']['label'] = '';
+  $handler->display->display_options['fields']['field_organisation_website']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_organisation_website']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_organisation_website']['click_sort_column'] = 'url';
   /* Field: Content: Organisation Image */
   $handler->display->display_options['fields']['field_organisation_image']['id'] = 'field_organisation_image';
   $handler->display->display_options['fields']['field_organisation_image']['table'] = 'field_data_field_organisation_image';
@@ -89,7 +89,7 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="row-fluid twocolgrid orgbox">
 <div class="orgimg"> [field_organisation_image]</div> 
-<div class="span11 orgtext">[field_website]</div>
+<div class="span11 orgtext">[field_organisation_website]</div>
 </div>
 ';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
