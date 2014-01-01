@@ -38,6 +38,11 @@ function collabco_organisation_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:closed_group:update field_organisation_address field'
+  $permissions['node:closed_group:update field_organisation_address field'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:closed_group:update field_organisation_image field'
   $permissions['node:closed_group:update field_organisation_image field'] = array(
     'roles' => array(
@@ -52,11 +57,21 @@ function collabco_organisation_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:closed_group:update field_organisation_website field'
+  $permissions['node:closed_group:update field_organisation_website field'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:closed_group:update own organisation content'
   $permissions['node:closed_group:update own organisation content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
+  );
+
+  // Exported og permission: 'node:closed_group:view field_organisation_address field'
+  $permissions['node:closed_group:view field_organisation_address field'] = array(
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:closed_group:view field_organisation_image field'
@@ -71,6 +86,11 @@ function collabco_organisation_feature_og_features_default_permissions() {
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
+  );
+
+  // Exported og permission: 'node:closed_group:view field_organisation_website field'
+  $permissions['node:closed_group:view field_organisation_website field'] = array(
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:group:create organisation content'
@@ -101,6 +121,11 @@ function collabco_organisation_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:group:update field_organisation_address field'
+  $permissions['node:group:update field_organisation_address field'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:group:update field_organisation_image field'
   $permissions['node:group:update field_organisation_image field'] = array(
     'roles' => array(
@@ -115,11 +140,21 @@ function collabco_organisation_feature_og_features_default_permissions() {
     ),
   );
 
+  // Exported og permission: 'node:group:update field_organisation_website field'
+  $permissions['node:group:update field_organisation_website field'] = array(
+    'roles' => array(),
+  );
+
   // Exported og permission: 'node:group:update own organisation content'
   $permissions['node:group:update own organisation content'] = array(
     'roles' => array(
       'administrator member' => 'administrator member',
     ),
+  );
+
+  // Exported og permission: 'node:group:view field_organisation_address field'
+  $permissions['node:group:view field_organisation_address field'] = array(
+    'roles' => array(),
   );
 
   // Exported og permission: 'node:group:view field_organisation_image field'
@@ -137,6 +172,11 @@ function collabco_organisation_feature_og_features_default_permissions() {
       'member' => 'member',
       'non-member' => 'non-member',
     ),
+  );
+
+  // Exported og permission: 'node:group:view field_organisation_website field'
+  $permissions['node:group:view field_organisation_website field'] = array(
+    'roles' => array(),
   );
 
   return $permissions;
