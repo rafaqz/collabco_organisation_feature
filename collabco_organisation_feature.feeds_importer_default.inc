@@ -50,32 +50,32 @@ function collabco_organisation_feature_feeds_importer_default() {
           ),
           1 => array(
             'source' => 'Website URL',
-            'target' => 'field_website:url',
+            'target' => 'field_organisation_website:url',
             'unique' => FALSE,
           ),
           2 => array(
             'source' => 'Address 1',
-            'target' => 'field_address:thoroughfare',
+            'target' => 'field_organisation_address:thoroughfare',
             'unique' => FALSE,
           ),
           3 => array(
             'source' => 'Address 2',
-            'target' => 'field_address:premise',
+            'target' => 'field_organisation_address:premise',
             'unique' => FALSE,
           ),
           4 => array(
             'source' => 'Suburb',
-            'target' => 'field_address:locality',
+            'target' => 'field_organisation_address:locality',
             'unique' => FALSE,
           ),
           5 => array(
             'source' => 'State or Territory',
-            'target' => 'field_address:administrative_area',
+            'target' => 'field_organisation_address:administrative_area',
             'unique' => FALSE,
           ),
           6 => array(
             'source' => 'Postcode',
-            'target' => 'field_address:postal_code',
+            'target' => 'field_organisation_address:postal_code',
             'unique' => FALSE,
           ),
           7 => array(
@@ -98,7 +98,7 @@ function collabco_organisation_feature_feeds_importer_default() {
           ),
           10 => array(
             'source' => 'Organisation Name',
-            'target' => 'field_website:title',
+            'target' => 'field_organisation_website:title',
             'unique' => FALSE,
           ),
           11 => array(

@@ -43,12 +43,12 @@ function collabco_organisation_feature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-organisation-field_address'
-  $field_instances['node-organisation-field_address'] = array(
+  // Exported field_instance: 'node-organisation-field_organisation_address'
+  $field_instances['node-organisation-field_organisation_address'] = array(
     'bundle' => 'organisation',
     'default_value' => array(
       0 => array(
-        'element_key' => 'node|organisation|field_address|und|0',
+        'element_key' => 'node|organisation|field_organisation_address|und|0',
         'thoroughfare' => '',
         'premise' => '',
         'locality' => '',
@@ -80,7 +80,7 @@ function collabco_organisation_feature_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_address',
+    'field_name' => 'field_organisation_address',
     'label' => 'Address',
     'required' => 0,
     'settings' => array(
@@ -101,43 +101,6 @@ function collabco_organisation_feature_field_default_field_instances() {
       ),
       'type' => 'addressfield_standard',
       'weight' => 4,
-    ),
-  );
-
-  // Exported field_instance: 'node-organisation-field_industry'
-  $field_instances['node-organisation-field_industry'] = array(
-    'bundle' => 'organisation',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 14,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_industry',
-    'label' => 'Industry',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_select',
-      'weight' => 7,
     ),
   );
 
@@ -191,50 +154,6 @@ function collabco_organisation_feature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-organisation-field_organisation_membership'
-  $field_instances['node-organisation-field_organisation_membership'] = array(
-    'bundle' => 'organisation',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'taxonomy',
-        'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
-        'weight' => 16,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_organisation_membership',
-    'label' => 'Organisation Membership',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'view' => array(
-      'args' => array(),
-      'display_name' => '',
-      'match_operator' => 'CONTAINS',
-      'size' => '',
-      'view_name' => '',
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 6,
-    ),
-  );
-
   // Exported field_instance: 'node-organisation-field_organisation_type'
   $field_instances['node-organisation-field_organisation_type'] = array(
     'bundle' => 'organisation',
@@ -272,8 +191,8 @@ function collabco_organisation_feature_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-organisation-field_website'
-  $field_instances['node-organisation-field_website'] = array(
+  // Exported field_instance: 'node-organisation-field_organisation_website'
+  $field_instances['node-organisation-field_organisation_website'] = array(
     'bundle' => 'organisation',
     'default_value' => NULL,
     'deleted' => 0,
@@ -294,7 +213,7 @@ function collabco_organisation_feature_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_website',
+    'field_name' => 'field_organisation_website',
     'label' => 'Website',
     'required' => FALSE,
     'settings' => array(
@@ -398,9 +317,7 @@ function collabco_organisation_feature_field_default_field_instances() {
   t('Address');
   t('Comment');
   t('Groups');
-  t('Industry');
   t('Organisation Image');
-  t('Organisation Membership');
   t('Organisation Type');
   t('Website');
 

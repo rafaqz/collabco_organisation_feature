@@ -32,29 +32,6 @@ function collabco_organisation_feature_taxonomy_default_vocabularies() {
         ),
       ),
     ),
-    'organisation_membership_type' => array(
-      'name' => 'Organisation Membership Type',
-      'machine_name' => 'organisation_membership_type',
-      'description' => 'Organisation Member and Partner Types',
-      'hierarchy' => 0,
-      'module' => 'taxonomy',
-      'weight' => 0,
-      'rdf_mapping' => array(
-        'rdftype' => array(
-          0 => 'skos:ConceptScheme',
-        ),
-        'name' => array(
-          'predicates' => array(
-            0 => 'dc:title',
-          ),
-        ),
-        'description' => array(
-          'predicates' => array(
-            0 => 'rdfs:comment',
-          ),
-        ),
-      ),
-    ),
     'organization_type' => array(
       'name' => 'Organization Type',
       'machine_name' => 'organization_type',

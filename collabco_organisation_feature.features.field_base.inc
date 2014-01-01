@@ -10,13 +10,13 @@
 function collabco_organisation_feature_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_address'
-  $field_bases['field_address'] = array(
+  // Exported field_base: 'field_organisation_address'
+  $field_bases['field_organisation_address'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_address',
+    'field_name' => 'field_organisation_address',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,
@@ -26,41 +26,6 @@ function collabco_organisation_feature_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'addressfield',
-  );
-
-  // Exported field_base: 'field_industry'
-  $field_bases['field_industry'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_industry',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'industries',
-          'parent' => 0,
-        ),
-      ),
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_organisation_image'
@@ -92,41 +57,6 @@ function collabco_organisation_feature_field_default_field_bases() {
     ),
     'translatable' => 0,
     'type' => 'image',
-  );
-
-  // Exported field_base: 'field_organisation_membership'
-  $field_bases['field_organisation_membership'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_organisation_membership',
-    'foreign keys' => array(
-      'tid' => array(
-        'columns' => array(
-          'tid' => 'tid',
-        ),
-        'table' => 'taxonomy_term_data',
-      ),
-    ),
-    'indexes' => array(
-      'tid' => array(
-        0 => 'tid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'taxonomy',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => array(
-          'vocabulary' => 'organisation_membership_type',
-          'parent' => 0,
-        ),
-      ),
-      'profile2_private' => FALSE,
-    ),
-    'translatable' => 0,
-    'type' => 'taxonomy_term_reference',
   );
 
   // Exported field_base: 'field_organisation_ref'
@@ -210,13 +140,13 @@ function collabco_organisation_feature_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_website'
-  $field_bases['field_website'] = array(
+  // Exported field_base: 'field_organisation_website'
+  $field_bases['field_organisation_website'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_website',
+    'field_name' => 'field_organisation_website',
     'foreign keys' => array(),
     'indexes' => array(),
     'locked' => 0,

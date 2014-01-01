@@ -10,15 +10,6 @@
 function collabco_organisation_feature_user_default_permissions() {
   $permissions = array();
 
-  // Exported permission: 'add terms in organisation_membership_type'.
-  $permissions['add terms in organisation_membership_type'] = array(
-    'name' => 'add terms in organisation_membership_type',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy_access_fix',
-  );
-
   // Exported permission: 'add terms in organization_type'.
   $permissions['add terms in organization_type'] = array(
     'name' => 'add terms in organization_type',
@@ -70,15 +61,6 @@ function collabco_organisation_feature_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'delete terms in organisation_membership_type'.
-  $permissions['delete terms in organisation_membership_type'] = array(
-    'name' => 'delete terms in organisation_membership_type',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: 'delete terms in organization_type'.
   $permissions['delete terms in organization_type'] = array(
     'name' => 'delete terms in organization_type',
@@ -106,15 +88,6 @@ function collabco_organisation_feature_user_default_permissions() {
       'Content Manager' => 'Content Manager',
     ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'edit terms in organisation_membership_type'.
-  $permissions['edit terms in organisation_membership_type'] = array(
-    'name' => 'edit terms in organisation_membership_type',
-    'roles' => array(
-      'Admin' => 'Admin',
-    ),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: 'edit terms in organization_type'.
