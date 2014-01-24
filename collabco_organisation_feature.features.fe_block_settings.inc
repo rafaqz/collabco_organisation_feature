@@ -22,10 +22,10 @@ function collabco_organisation_feature_default_fe_block_settings() {
     'pages' => 'partners-providers',
     'roles' => array(),
     'themes' => array(
-      'custom_theme' => array(
+      'custom_zurb' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'custom_theme',
+        'theme' => 'custom_zurb',
         'weight' => 0,
       ),
       'seven' => array(
@@ -49,10 +49,10 @@ function collabco_organisation_feature_default_fe_block_settings() {
     'pages' => 'partners-providers',
     'roles' => array(),
     'themes' => array(
-      'custom_theme' => array(
+      'custom_zurb' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'custom_theme',
+        'theme' => 'custom_zurb',
         'weight' => 0,
       ),
       'seven' => array(
@@ -76,10 +76,10 @@ function collabco_organisation_feature_default_fe_block_settings() {
     'pages' => '',
     'roles' => array(),
     'themes' => array(
-      'custom_theme' => array(
+      'custom_zurb' => array(
         'region' => '',
         'status' => 0,
-        'theme' => 'custom_theme',
+        'theme' => 'custom_zurb',
         'weight' => 0,
       ),
       'seven' => array(
