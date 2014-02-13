@@ -358,8 +358,8 @@ function collabco_organisation_feature_field_default_field_instances() {
   t('Groups');
   t('Organisation Image');
   t('Organisation Type');
-  t('Website');
   t('Tags');
+  t('Website');
 
   return $field_instances;
 }
