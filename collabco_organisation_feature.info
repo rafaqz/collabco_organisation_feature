@@ -42,7 +42,6 @@ features[field_instance][] = node-organisation-field_organisation_image
 features[field_instance][] = node-organisation-field_organisation_type
 features[field_instance][] = node-organisation-field_organisation_website
 features[field_instance][] = node-organisation-og_group_ref
-features[field_instance][] = node-organisation-tags
 features[node][] = organisation
 features[og_features_permission][] = node:closed_group:create organisation content
 features[og_features_permission][] = node:closed_group:delete any organisation content
