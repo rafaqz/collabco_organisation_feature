@@ -189,7 +189,7 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['relationships']['og_membership_rel']['required'] = TRUE;
 
   /* Display: Closed Group Page */
-  $handler = $view->new_display('page', 'Closed Group Page', 'closed_group_page');
+  $handler = $view->new_display('page', 'Closed Group Page', 'private_group_page');
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
@@ -222,7 +222,7 @@ function collabco_organisation_feature_views_default_views() {
   $handler->display->display_options['arguments']['gid']['specify_validation'] = TRUE;
   $handler->display->display_options['arguments']['gid']['validate']['type'] = 'node';
   $handler->display->display_options['arguments']['gid']['validate_options']['types'] = array(
-    'closed_group' => 'closed_group',
+    'private_group' => 'private_group',
   );
   $handler->display->display_options['arguments']['gid']['validate_options']['access'] = TRUE;
   $handler->display->display_options['path'] = 'node/%/organisations';
