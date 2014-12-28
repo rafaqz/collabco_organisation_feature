@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_organisation_feature.features.user_permission.inc
+ * organisation_feature.features.user_permission.inc
  */
 
 /**
  * Implements hook_user_default_permissions().
  */
-function collabco_organisation_feature_user_default_permissions() {
+function organisation_feature_user_default_permissions() {
   $permissions = array();
 
   // Exported permission: 'add terms in organization_type'.

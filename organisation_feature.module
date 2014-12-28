@@ -4,4 +4,4 @@
  * Code for the Collabco Organisation Feature feature.
  */
 
-include_once 'collabco_organisation_feature.features.inc';
+include_once 'organisation_feature.features.inc';

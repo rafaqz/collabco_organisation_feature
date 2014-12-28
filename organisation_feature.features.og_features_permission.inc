@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_organisation_feature.features.og_features_permission.inc
+ * organisation_feature.features.og_features_permission.inc
  */
 
 /**
  * Implements hook_og_features_default_permissions().
  */
-function collabco_organisation_feature_og_features_default_permissions() {
+function organisation_feature_og_features_default_permissions() {
   $permissions = array();
 
   // Exported og permission: 'node:private_group:create organisation content'

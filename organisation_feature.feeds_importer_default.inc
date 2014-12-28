@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_organisation_feature.feeds_importer_default.inc
+ * organisation_feature.feeds_importer_default.inc
  */
 
 /**
  * Implements hook_feeds_importer_default().
  */
-function collabco_organisation_feature_feeds_importer_default() {
+function organisation_feature_feeds_importer_default() {
   $export = array();
 
   $feeds_importer = new stdClass();

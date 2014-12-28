@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * collabco_organisation_feature.views_default.inc
+ * organisation_feature.views_default.inc
  */
 
 /**
  * Implements hook_views_default_views().
  */
-function collabco_organisation_feature_views_default_views() {
+function organisation_feature_views_default_views() {
   $export = array();
 
   $view = new view();
