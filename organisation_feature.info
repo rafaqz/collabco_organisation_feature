@@ -1,6 +1,6 @@
-name = Collabco Organisation Feature
+name = Organisation Feature
 core = 7.x
-package = Collabco
+package = Features
 project = organisation_feature
 dependencies[] = addressfield
 dependencies[] = ctools
